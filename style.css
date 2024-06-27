@@ -1,0 +1,481 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+ul{ /* это применен для всех тега ul */
+    list-style-type: none;
+    font-family: "Kaisei Opti", serif;
+}
+
+a {  /*это а который входит для тег ul*/
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu_boss{ /* главный фон сайта*/
+    background-color: #9A4F4F;
+    margin-bottom: 200px;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.header_main{
+
+}
+
+.header__inner{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+
+.foterry2{
+    transform: scale(1.2);
+    
+
+}
+.foot_benoit2{
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    font-family: 'Cassandre', sans-serif;
+    font-weight: normal;
+}
+
+.foot_french2{
+    text-align: center; 
+    color: white;
+    font-family: "Aboreto", system-ui;
+    font-size: 8px;
+} 
+
+
+.top_menu{ /*это меню лист то что входит главная меню и о нас */
+    text-align: center;
+    font-size: 15px;
+    display: flex; 
+    gap: 55px;
+    font-family: "Kaisei Opti", serif;
+}
+
+
+.submenu li{
+    position: relative;
+}
+
+.submenu{
+    min-width: 100px;
+    position: absolute;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.submenu a{
+    border: 1px solid white;
+    font-size: 10px;
+    padding: 6px 3px;
+    background-color: #9A4F4F;
+    display: block;
+    color: white;
+}
+
+.top_menu li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg);
+}
+
+
+
+.menu_list_link{
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* .menu_list_lin{
+    border-bottom: 1px solid #000;
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 10px;
+    
+ */
+
+
+.top_title{
+    color: white;
+    font-family: "Aboreto", system-ui;
+    text-align: center;
+    padding-bottom: 200px;
+    font-size: 45px;
+    margin-top: 65px;
+}
+
+.top_text{
+    color: white;
+    font-family: "Kaisei Opti", serif;
+    font-size: 18px;
+    width: 700px;
+    padding-bottom: 80px;
+}
+
+
+/* отвечает за иконки сердечко и В и за текст в меню главной */
+.header_text{
+    margin-top: 100px;
+    max-width: 500px;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* отвечает за 3 фото в меню главной */
+.header_img{
+    width: 300px;
+    display: flex; justify-content: space-between;
+    align-items:center
+}
+
+/* отвечает за иконку сердечко и букыв Б */
+.header_icon_love_B{
+    text-align: center;
+}
+
+/* отвечает за вертикальность и по центру под сердочкой */
+.icon_B{ 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 230px;
+} 
+
+.text_image{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+.text_next{
+    text-align: center;
+    padding-left: 30px;
+}
+
+.text_we{
+    text-align: center;
+    display: inline-table;
+    color: #9A4F4F;
+    font-family:"Prata", serif;
+    padding-bottom: 70px;
+    font-weight: 580;
+    font-size: 20px;
+}
+
+.text_one{
+    color: #9A4F4F;
+    padding-bottom: 70px;
+}
+
+.image_hoto{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text_special2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text_special{
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.header_icon_love_B_little{
+    text-align: center;
+    display: block;
+    width: 0%;
+    margin: 0 auto;
+}
+
+.icon_B_little{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.lin{
+    display: flex; 
+    justify-content: center;
+}
+
+.text_menuu{
+    text-align: center;
+    color: #9A4F4F;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    display: block; 
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.menu_text{
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.text_menu{
+    margin-bottom: 40px;
+}
+
+.body_color{
+    background-color: #9A4F4F;
+}
+
+.text_old{
+    display: flex; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    height: 883px;
+}
+
+.text_menu_coc{
+    text-align: center;
+}
+
+.text_benoit{
+    color: white;
+    font-family: 'Cassandre', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.text_coc{
+    color: white;
+    width: 100%;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 300;
+    font-style: normal;
+} 
+
+.cOc-img{
+    margin: 0 auto;
+}
+.text_sic{
+    color: white;
+    font-size: 15px;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 700px;
+    padding-bottom: 100px; 
+} 
+
+.coc_icon{
+    max-width: 600px;
+} 
+
+
+
+.foter{
+    max-width: 1200px;
+    margin: 0 auto; 
+    justify-content: center;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+
+.foot_benoit{
+    font-size: 50px;
+    color: #9A4F4F;
+    text-align: center; 
+    padding-top: 60px;
+    font-family: 'Cassandre', sans-serif;
+}
+
+.foot_french{
+    text-align: center; 
+    color: #9A4F4F;
+    font-family: "Aboreto", system-ui;
+    padding-bottom: 70px;
+} 
+
+.dataa{
+    color: #9A4F4F;
+    
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-family:"Prata", serif;
+    padding-left: 50px;
+    width: 300px;
+}
+
+.text_data{
+    color: #9A4F4F;
+    font-family: "Prata", serif;
+    font-size: 35px;
+    padding-bottom: 30px;
+    padding-top: 60px;
+} 
+
+.foot_img{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.foot_ok{
+    background-color: #9A4F4F;
+    
+}
+
+.foot_oks{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.foot_lis{
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+
+.menu_list_itemm{
+    padding-bottom: 17px;
+}
+.con{
+    color: white;
+}
+
+
+.icon_fot{
+    max-width: 60px;
+    padding-bottom: 10px;
+}
+
+.text_karta{
+    color: white;
+    font-size: 20px;
+}
+
+.icon_foot{
+    padding-top: 5px;
+}
+
+.stol_form{
+    color: #9A4F4F;
+    font-family:"Prata", serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+legend{
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+p{
+    padding-bottom: 10px;
+}
+
+button{
+    width: 250px;
+    font-family: "Prata", serif;
+    font-size: 20px;
+    color: #9A4F4F;
+    background-color: #f1e1e1;
+    margin-top: 25px;
+    border: white
+    
+}
+
+.zakaz_dos{
+    color: #9A4F4F;
+    font-family:"Prata", serif;
+    text-align: center;
+}
+
+.icon_text{
+    display: flex;
+}
+
+.text_whatsap2{
+    color: #9A4F4F;
+    padding-top: 8px;
+}
+
+.text_whatsap{
+    padding-top: 13px;
+    color: white;
+    font-size: 20px;
+}
+
+.textcons{
+    font-weight: 700;
+}
+
+input{
+    height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
